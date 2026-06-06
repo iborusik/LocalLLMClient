@@ -38,7 +38,7 @@ public func stbi_load(_ filename: UnsafePointer<CChar>, _ x: UnsafeMutablePointe
     return rgbBytes
 }
 
-@used
+@_used
 @_silgen_name("stbi_image_free")
 public func stbi_image_free(_ buffer: UnsafeMutableRawPointer) {
     buffer.assumingMemoryBound(to: UInt8.self).deallocate()
