@@ -20,7 +20,7 @@ public func stbi_load_from_memory(_ buffer:  UnsafePointer<UInt8>, _ len: UInt64
     return rgbBytes
 }
 
-@used
+@_used
 @_silgen_name("stbi_load")
 public func stbi_load(_ filename: UnsafePointer<CChar>, _ x: UnsafeMutablePointer<Int32>, _ y: UnsafeMutablePointer<Int32>, _ comp: UnsafeMutablePointer<Int32>, _ req_comp: Int32) -> UnsafeMutableRawPointer? {
     assert(req_comp == 3, "Only RGB format is supported")
