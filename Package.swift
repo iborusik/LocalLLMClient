@@ -103,7 +103,7 @@ packageTargets.append(contentsOf: [
             .product(name: "ArgumentParser", package: "swift-argument-parser"),
         ],
         swiftSettings: [
-            .interoperabilityMode(.Cxx)
+            .interoperabilityMode(.Cxx),
             .enableExperimentalFeature("SymbolLinkageMarkers")
         ],
         linkerSettings: [
